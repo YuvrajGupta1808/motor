@@ -1,4 +1,4 @@
-#include "main.h"
+#include "assignment3.h"
 
 void Handler(int signo)
 {
@@ -54,7 +54,7 @@ int main(void)
 
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
-    
+
     // Program finished, exit gracefully
     DEV_ModuleExit();
     return 0;

@@ -6,7 +6,7 @@ DIR_PCA9685 = ./
 OBJ_C = $(wildcard *.c)
 OBJ_O = $(patsubst %.c,${DIR_BIN}/%.o,$(notdir ${OBJ_C}))
 
-TARGET = main
+TARGET = assignment3
 
 CC = gcc
 
