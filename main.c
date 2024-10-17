@@ -54,9 +54,10 @@ int main(void)
 
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
-    while (1)
-    {
-    }
+    
+    // Program finished, exit gracefully
+    DEV_ModuleExit();
+    return 0;
 
     // 3.System Exit
     DEV_ModuleExit();
