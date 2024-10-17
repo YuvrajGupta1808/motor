@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.xml": "xml",
+        "PCA9865.C": "cpp",
+        "PCA9685.C": "cpp"
+    }
+}
