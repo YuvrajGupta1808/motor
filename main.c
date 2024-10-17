@@ -20,10 +20,7 @@ int main(void)
     //2.Motor Initialization
     Motor_Init();
 
-    printf("Motor_Run\r\n");
-    Motor_Run(MOTORA, FORWARD, 100);
-    Motor_Run(MOTORB, BACKWARD, 100);
-
+    Motor_Run(MOTORA, BACKWARD, 100);
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
     while(1) {

@@ -39,13 +39,15 @@ void Motor_Run(UBYTE motor, DIR dir, UWORD speed)
             DEBUG("forward...\r\n");
             PCA9685_SetLevel(AIN1, 0);
             PCA9685_SetLevel(AIN2, 1);
+	    DEBUG("Setting Motor A: AIN1 = %d, AIN2 = %d\r\n", 0, 1); // For forward
         }
         else
         {
             DEBUG("backward...\r\n");
             PCA9685_SetLevel(AIN1, 1);
             PCA9685_SetLevel(AIN2, 0);
-        }
+	    DEBUG("Setting Motor A: AIN1 = %d, AIN2 = %d\r\n", 1, 0); // For backward
+}
     }
     else
     {
